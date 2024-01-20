@@ -5,3 +5,6 @@ Remote Terminal $\rightarrow$ Raspberry Pi Client $\rightarrow$ ESP32 Server
 
 ## OS Switch Integration
 This system also contains an integration with my existing operating system switch, which will switch between two dual boot operating systems depending on the position of a physical switch. The ESP32 has a second transistor in parallel with the switch, the gate of this transistor is connected to pin 21 on the ESP32 allowing it to control which operating system is selected.
+
+## Circuit Diagram
+![CircuitDiagram](https://github.com/Luca-G17/RemoteBoot/assets/63655147/c9fb833a-fa4e-4b6b-9520-2c3ed6f741b4)
