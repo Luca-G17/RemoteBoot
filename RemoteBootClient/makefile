@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS=-Wall -std=c11
+CFLAGS=-Wall -std=c11 -ggdb -O0
 SRC_DIR=src
 BUILD_DIR=build
 EXECUTABLE=$(BUILD_DIR)/main

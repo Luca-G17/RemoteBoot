@@ -46,7 +46,12 @@ void tcp_connection(char* msg) {
 // argv[0] = Program Name
 // argv[1] = OS Select
 int main(int argc, char *argv[]) {
-    char* msg;
-    fprintf(msg, "BOOT - %s", argv[1]);
+    char msg[30];
+    if (sizeof(argv[1]) > 10)
+        return -1;
+    if (argc == 1)
+        return -1;
+    
+    sprintf(msg, "BOOT - %s", argv[1]);
     tcp_connection(argv[1]);
 }
